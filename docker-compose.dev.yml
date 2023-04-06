@@ -48,7 +48,7 @@ services:
     build: .
     image: devbaraus/emprega:latest
     restart: unless-stopped
-    command: sh -c "python manage.py runserver"
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
     environment:
       - UID=1000
       - GID=1000
