@@ -12,7 +12,7 @@ from unidecode import unidecode
 
 
 def process_candidato_tfidf(curriculo):
-    #que tipo de parametro é o curriculo? o curriculo em si ou o caminho dele?
+    #o caminho do currículo vai no parâmetro
     text = get_pdf_text(str(curriculo))
 
     text = treat_text(text)
