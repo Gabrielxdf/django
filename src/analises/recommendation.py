@@ -46,8 +46,8 @@ def recommend_vagas_tfidf(vagas, user):
 def recommend_candidatos_tfidf(candidatos, vaga):
     start = time.time()
 
-    vaga_text = [str(vaga.vaga_processada)]
-    candidatos_text = [str(candidato.curriculo_processado) for candidato in candidatos]
+    vaga_text = [str(vaga)]
+    candidatos_text = [str(candidato) for candidato in candidatos]
 
     #vaga_tfidf, curriculos_tfidf
     query_tfidf, corpus_tfidf = apply_tfidf(vaga_text, candidatos_text)
@@ -87,7 +87,7 @@ def treat_text(text):
 
 
 def apply_tfidf(query, corpus):
-    nltk.download('stopwords')
+    nltk.download('stopwords', quiet=True)
     stopwords_list = stopwords.words('english') + stopwords.words('portuguese')
 
     vectorizer = TfidfVectorizer(stop_words=stopwords_list)
@@ -160,8 +160,8 @@ def recommend_vagas_bert(vagas, user):
 def recommend_candidatos_bert(candidatos, vaga):
     start = time.time()
 
-    vaga_embedding = [vaga.vaga_embedding]
-    candidatos_embedding = [candidato.curriculo_embedding for candidato in candidatos]
+    vaga_embedding = [vaga]
+    candidatos_embedding = [candidato for candidato in candidatos]
 
     cosine_similarities = cosine_similarity(vaga_embedding, candidatos_embedding)
 
