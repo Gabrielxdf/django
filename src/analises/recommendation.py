@@ -12,7 +12,7 @@ from unidecode import unidecode
 
 
 def process_candidato_tfidf(curriculo):
-    #o caminho do currículo vai no parâmetro
+    # o caminho do currículo vai no parâmetro
     text = get_pdf_text(str(curriculo))
 
     text = treat_text(text)
@@ -31,7 +31,7 @@ def recommend_vagas_tfidf(vagas, user):
     user_text = [str(user)]
     vagas_text = [str(vaga) for vaga in vagas]
 
-    #curriculo tfidf, vagas tfidf
+    # curriculo tfidf, vagas tfidf
     query_tfidf, corpus_tfidf = apply_tfidf(user_text, vagas_text)
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
@@ -49,11 +49,17 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     vaga_text = [str(vaga)]
     candidatos_text = [str(candidato) for candidato in candidatos]
 
-    #vaga_tfidf, curriculos_tfidf
+    # vaga_tfidf, curriculos_tfidf
     query_tfidf, corpus_tfidf = apply_tfidf(vaga_text, candidatos_text)
+    # retorna um vetor com as similaridades da vaga com todos os currículos
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
+    # np.argsort() retorna os índices que ordenariam esse vetor, e o [::-1] apenas vai inverter esse vetor
+    # de índices para obter o índice de maior resultado, para o índice de menor.
     indexes = np.argsort(cosine_similarities[0])[::-1]
+
+    # queries nesse caso são os candidatos, estou criando uma nova lista de candidatos usando os índices obtidos
+    # dos melhores resultados para os piores
     queries = list(np.array(list(candidatos))[indexes])
 
     print(f'tfidf + cosine = {time.time() - start}')
@@ -97,13 +103,15 @@ def apply_tfidf(query, corpus):
 
     import pandas as pd
 
-    #exportar a matriz tf-idf para csv e xlsx
-    df = pd.DataFrame(corpus_tfidf.toarray(), columns=vectorizer.get_feature_names_out())
+    # exportar a matriz tf-idf para csv e xlsx
+    df = pd.DataFrame(corpus_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
     df.to_csv("corpus_tfidf.csv", encoding='utf-8', index=False)
     df.to_excel("corpus_tfidf.xlsx", encoding='utf-8', index=False)
 
-    #exportar a matriz tf-idf para csv e xlsx
-    df = pd.DataFrame(query_tfidf.toarray(), columns=vectorizer.get_feature_names_out())
+    # exportar a matriz tf-idf para csv e xlsx
+    df = pd.DataFrame(query_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
     df.to_csv("query_tfidf.csv", encoding='utf-8', index=False)
     df.to_excel("query_tfidf.xlsx", encoding='utf-8', index=False)
 
@@ -111,7 +119,8 @@ def apply_tfidf(query, corpus):
 
 
 def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
-    model_path = os.path.join(os.path.dirname(__file__), f'bert_models/{model_name}')
+    model_path = os.path.join(os.path.dirname(
+        __file__), f'bert_models/{model_name}')
 
     try:
         model = SentenceTransformer(model_path, device="cpu")
@@ -163,7 +172,8 @@ def recommend_candidatos_bert(candidatos, vaga):
     vaga_embedding = [vaga]
     candidatos_embedding = [candidato for candidato in candidatos]
 
-    cosine_similarities = cosine_similarity(vaga_embedding, candidatos_embedding)
+    cosine_similarities = cosine_similarity(
+        vaga_embedding, candidatos_embedding)
 
     indexes = np.argsort(cosine_similarities[0])[::-1]
     queries = list(np.array(list(candidatos))[indexes])
