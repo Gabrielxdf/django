@@ -28,9 +28,10 @@ def process_vaga_tfidf(vaga_text):
 def recommend_vagas_tfidf(vagas, user):
     start = time.time()
 
-    user_text = [str(user.curriculo_processado)]
-    vagas_text = [str(vaga.vaga_processada) for vaga in vagas]
+    user_text = [str(user)]
+    vagas_text = [str(vaga) for vaga in vagas]
 
+    #curriculo tfidf, vagas tfidf
     query_tfidf, corpus_tfidf = apply_tfidf(user_text, vagas_text)
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
@@ -48,6 +49,7 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     vaga_text = [str(vaga.vaga_processada)]
     candidatos_text = [str(candidato.curriculo_processado) for candidato in candidatos]
 
+    #vaga_tfidf, curriculos_tfidf
     query_tfidf, corpus_tfidf = apply_tfidf(vaga_text, candidatos_text)
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
@@ -75,7 +77,7 @@ def get_pdf_text(pdf_path):
 
 
 def treat_text(text):
-    nltk.download('rslp')
+    nltk.download('rslp', quiet=True)
     stemmer = nltk.stem.RSLPStemmer()
     text = text.lower().strip(" ").split(" ")
     text = " ".join([stemmer.stem(word) for word in text if word != ''])
@@ -92,6 +94,18 @@ def apply_tfidf(query, corpus):
 
     corpus_tfidf = vectorizer.fit_transform(corpus)
     query_tfidf = vectorizer.transform(query)
+
+    import pandas as pd
+
+    #exportar a matriz tf-idf para csv e xlsx
+    df = pd.DataFrame(corpus_tfidf.toarray(), columns=vectorizer.get_feature_names_out())
+    df.to_csv("corpus_tfidf.csv", encoding='utf-8', index=False)
+    df.to_excel("corpus_tfidf.xlsx", encoding='utf-8', index=False)
+
+    #exportar a matriz tf-idf para csv e xlsx
+    df = pd.DataFrame(query_tfidf.toarray(), columns=vectorizer.get_feature_names_out())
+    df.to_csv("query_tfidf.csv", encoding='utf-8', index=False)
+    df.to_excel("query_tfidf.xlsx", encoding='utf-8', index=False)
 
     return query_tfidf, corpus_tfidf
 
@@ -130,8 +144,8 @@ def process_vaga_bert(text):
 def recommend_vagas_bert(vagas, user):
     start = time.time()
 
-    user_embedding = [user.curriculo_embedding]
-    vagas_embedding = [vaga.vaga_embedding for vaga in vagas]
+    user_embedding = [user]
+    vagas_embedding = [vaga for vaga in vagas]
 
     cosine_similarities = cosine_similarity(user_embedding, vagas_embedding)
 
