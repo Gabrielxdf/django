@@ -1,0 +1,50 @@
+Analista de Marketing, Planejamento e execução de campanhas, Graduação em Marketing, 9h às 18h, R$ 5.000,00, Publicidade e Propaganda, Empresa de comunicação digital.
+Desenvolvedor Full Stack, Desenvolvimento de sistemas, Graduação em Ciências da Computação, 8h às 17h, R$ 8.000,00, Tecnologia da Informação, Empresa de desenvolvimento de software.
+Analista de RH, Recrutamento e seleção, Graduação em Psicologia, 10h às 19h, R$ 4.500,00, Recursos Humanos, Empresa de consultoria em gestão de pessoas.
+Assistente Administrativo, Rotinas administrativas, Ensino Médio completo, 9h às 18h, R$ 2.000,00, Serviços Administrativos, Empresa de terceirização de serviços.
+Técnico em Enfermagem, Assistência direta ao paciente, Curso técnico em enfermagem, 12h às 18h, R$ 2.500,00, Saúde, Empresa de assistência domiciliar.
+Assistente de Vendas, Atendimento ao cliente, Ensino Médio completo, 9h às 18h, R$ 1.800,00, Comércio, Empresa de varejo.
+Auxiliar de Produção, Montagem de peças, Ensino Fundamental completo, 7h às 16h, R$ 1.500,00, Indústria, Empresa de fabricação de autopeças.
+Recepcionista, Atendimento telefônico e presencial, Ensino Médio completo, 8h às 17h, R$ 2.000,00, Serviços Administrativos, Empresa de turismo.
+Motorista, Entrega de mercadorias, Ensino Médio completo e CNH D, 8h às 17h, R$ 2.500,00, Logística, Empresa de transporte de cargas.
+Assistente de Marketing Digital, Gestão de mídias sociais, Graduação em Marketing, 9h às 18h, R$ 3.500,00, Publicidade e Propaganda, Agência de marketing digital.
+Supervisor de Vendas, Gestão de equipe e vendas externas, Graduação em Administração, 8h às 17h, R$ 7.000,00, Comércio, Empresa de distribuição de produtos.
+Analista Contábil, Análise de balanços e demonstrações financeiras, Graduação em Contabilidade, 9h às 18h, R$ 6.000,00, Contabilidade, Empresa de auditoria e contabilidade.
+Estagiário de Recursos Humanos, Auxílio em recrutamento e seleção, Cursando graduação em Psicologia, 6h diárias, R$ 1.000,00, Recursos Humanos, Empresa de terceirização de serviços.
+Assistente de Compras, Cotação e negociação com fornecedores, Graduação em Administração, 9h às 18h, R$ 3.500,00, Comércio, Empresa de varejo.
+Operador de Caixa, Recebimento de pagamentos, Ensino Médio completo, 14h às 22h, R$ 1.500,00, Comércio, Empresa de supermercado.
+Assistente Fiscal, Apuração de impostos e emissão de notas fiscais, Graduação em Ciências Contábeis, 9h às 18h, R$ 4.500,00, Contabilidade, Empresa de consultoria contábil.
+Assistente de Logística, Controle de estoque e programação de entregas, Ensino Superior completo, 8h às 17h, R$ 3.000,00, Logística, Empresa de transporte e logística.
+Auxiliar de Limpeza, Limpeza e conservação de ambientes, Ensino Fundamental completo, 6h às 14h, R$ 1.200,00, Serviços Gerais, Empresa de limpeza terceirizada.
+Analista de Sistemas, Análise e desenvolvimento de sistemas, Graduação em Sistemas de Informação, 9h às 18h, R$ 7.000,00, Tecnologia da Informação, Empresa de desenvolvimento de software.
+Estagiário de Marketing, Auxílio em campanhas publicitárias, Cursando graduação em Marketing, 6h diárias, R$ 1.000,00, Publicidade e Propaganda, Empresa de comunicação visual.
+Assistente Comercial, Prospecção e atendimento ao cliente, Graduação em Administração, 9h às 18h, R$ 3.500,00, Comércio, Empresa de distribuição de produtos.
+Operador de Telemarketing, Atendimento ao cliente por telefone, Ensino Médio completo, 14h às 20h, R$ 1.500,00, Serviços, Empresa de call center.
+Consultor de Vendas, Vendas externas e atendimento ao cliente, Ensino Superior completo, 8h às 17h, R$ 6.000,00, Comércio, Empresa de venda de produtos tecnológicos.
+Analista de Qualidade, Controle de qualidade de produtos, Graduação em Engenharia, 9h às 18h, R$ 5.000,00, Indústria, Empresa de fabricação de alimentos.
+Estagiário de Direito, Auxílio em processos jurídicos, Cursando graduação em Direito, 6h diárias, R$ 1.200,00, Advocacia, Empresa de consultoria jurídica.
+Auxiliar Administrativo Financeiro, Controle de contas a pagar e receber, Ensino Médio completo, 9h às 18h, R$ 2.500,00, Serviços Administrativos, Empresa de consultoria financeira.
+Gerente de Projetos, Gerenciamento de projetos, Graduação em Administração, 9h às 18h, R$ 10.000,00, Consultoria, Empresa de consultoria em gestão de negócios.
+Assistente de Recursos Humanos, Auxílio em treinamentos e desenvolvimento de pessoas, Graduação em Psicologia, 9h às 18h, R$ 3.500,00, Recursos Humanos, Empresa de tecnologia e inovação.
+Analista de Comunicação, Criação de conteúdo e gerenciamento de redes sociais, Graduação em Comunicação Social, 9h às 18h, R$ 4.500,00, Comunicação, Empresa de marketing digital.
+Cozinheiro, Preparação de alimentos e organização da cozinha, Ensino Médio completo, 14h às 22h, R$ 2.000,00, Alimentação, Restaurante.
+Atendente de Farmácia, Atendimento ao cliente e vendas, Ensino Médio completo, 8h às 17h, R$ 1.500,00, Saúde, Farmácia.
+Auxiliar de Produção, Montagem e preparação de produtos, Ensino Fundamental completo, 6h às 14h, R$ 1.200,00, Indústria, Empresa de fabricação de peças automotivas.
+Desenvolvedor Front-end, Desenvolvimento de interfaces web, Graduação em Ciência da Computação, 9h às 18h, R$ 6.000,00, Tecnologia da Informação, Empresa de desenvolvimento de software.
+Técnico de Enfermagem, Cuidados com pacientes e administração de medicamentos, Curso Técnico em Enfermagem, 7h às 19h, R$ 2.500,00, Saúde, Hospital.
+Operador de Empilhadeira, Movimentação de cargas e materiais, Ensino Médio completo, 8h às 17h, R$ 2.000,00, Logística, Empresa de armazenagem.
+Assistente Jurídico, Auxílio em processos jurídicos, Graduação em Direito, 9h às 18h, R$ 3.500,00, Advocacia, Escritório de advocacia.
+Vendedor Externo, Prospecção e vendas externas, Ensino Médio completo, 9h às 18h, R$ 2.500,00, Comércio, Empresa de distribuição de produtos alimentícios.
+Assistente de Marketing Digital, Criação de campanhas e gerenciamento de redes sociais, Graduação em Marketing, 9h às 18h, R$ 3.500,00, Publicidade e Propaganda, Empresa de marketing digital.
+Analista de Recursos Humanos, Seleção e treinamento de colaboradores, Graduação em Psicologia, 9h às 18h, R$ 5.000,00, Recursos Humanos, Empresa de consultoria em gestão de pessoas.
+Técnico de Manutenção, Manutenção preventiva e corretiva de equipamentos, Curso Técnico em Mecânica, 8h às 17h, R$ 3.000,00, Indústria, Empresa de fabricação de produtos eletrônicos.
+Assistente de Compras, Negociação e compra de materiais, Graduação em Administração, 9h às 18h, R$ 2.500,00, Comércio, Empresa de distribuição de materiais de construção.
+Auxiliar de Eletricista, Auxílio em instalações elétricas, Ensino Fundamental completo, 8h às 17h, R$ 1.500,00, Construção Civil, Empresa de construção civil.
+Assistente Administrativo, Suporte administrativo em geral, Ensino Médio completo, 9h às 18h, R$ 2.500,00, Administração, Empresa de consultoria empresarial.
+Motorista de Caminhão, Transporte de cargas, Ensino Médio completo, 8h às 17h, R$ 2.500,00, Transporte, Empresa de logística.
+Analista de Sistemas, Desenvolvimento e manutenção de sistemas, Graduação em Sistemas de Informação, 9h às 18h, R$ 6.000,00, Tecnologia da Informação, Empresa de desenvolvimento de software.
+Atendente de Telemarketing, Atendimento ao cliente por telefone, Ensino Médio completo, 8h às 17h, R$ 1.500,00, Comunicação, Empresa de call center.
+Técnico de Segurança do Trabalho, Prevenção de acidentes e fiscalização de normas de segurança, Curso Técnico em Segurança do Trabalho, 8h às 17h, R$ 3.000,00, Segurança do Trabalho, Empresa de construção civil.
+Auxiliar de Limpeza, Limpeza e conservação de ambientes, Ensino Fundamental completo, 6h às 14h, R$ 1.200,00, Serviços Gerais, Empresa de limpeza e conservação.
+Analista Contábil, Contabilidade e controle financeiro, Graduação em Ciências Contábeis, 9h às 18h, R$ 4.500,00, Contabilidade, Empresa de contabilidade.
+Designer Gráfico, Criação de peças gráficas e identidade visual, Graduação em Design Gráfico, 9h às 18h, R$ 3.500,00, Design, Empresa de comunicação visual.

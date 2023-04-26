@@ -1,6 +1,6 @@
 import os
 import time
-
+import pandas as pd
 import PyPDF2
 import nltk
 import numpy as np
@@ -32,13 +32,23 @@ def recommend_vagas_tfidf(vagas, user):
     vagas_text = [str(vaga) for vaga in vagas]
 
     # curriculo tfidf, vagas tfidf
-    query_tfidf, corpus_tfidf = apply_tfidf(user_text, vagas_text)
+    query_tfidf, corpus_tfidf, vectorizer = apply_tfidf(user_text, vagas_text)
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
     indexes = np.argsort(cosine_similarities[0])[::-1]
     queries = list(np.array(list(vagas))[indexes])
 
     print(f'tfidf + cosine = {time.time() - start}')
+
+    # exportar a matriz tf-idf para xlsx
+    df = pd.DataFrame(corpus_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
+    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_vagas/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+
+    # exportar a matriz tf-idf para xlsx
+    df = pd.DataFrame(query_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
+    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_vagas/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
     return queries
 
@@ -50,7 +60,7 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     candidatos_text = [str(candidato) for candidato in candidatos]
 
     # vaga_tfidf, curriculos_tfidf
-    query_tfidf, corpus_tfidf = apply_tfidf(vaga_text, candidatos_text)
+    query_tfidf, corpus_tfidf, vectorizer = apply_tfidf(vaga_text, candidatos_text)
     # retorna um vetor com as similaridades da vaga com todos os currículos
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
 
@@ -63,6 +73,16 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     queries = list(np.array(list(candidatos))[indexes])
 
     print(f'tfidf + cosine = {time.time() - start}')
+
+    # exportar a matriz tf-idf para xlsx
+    df = pd.DataFrame(corpus_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
+    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_candidatos/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+
+    # exportar a matriz tf-idf para xlsx
+    df = pd.DataFrame(query_tfidf.toarray(),
+                      columns=vectorizer.get_feature_names_out())
+    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_candidatos/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
     return queries
 
@@ -101,21 +121,7 @@ def apply_tfidf(query, corpus):
     corpus_tfidf = vectorizer.fit_transform(corpus)
     query_tfidf = vectorizer.transform(query)
 
-    import pandas as pd
-
-    # exportar a matriz tf-idf para csv e xlsx
-    df = pd.DataFrame(corpus_tfidf.toarray(),
-                      columns=vectorizer.get_feature_names_out())
-    df.to_csv("corpus_tfidf.csv", encoding='utf-8', index=False)
-    df.to_excel("corpus_tfidf.xlsx", encoding='utf-8', index=False)
-
-    # exportar a matriz tf-idf para csv e xlsx
-    df = pd.DataFrame(query_tfidf.toarray(),
-                      columns=vectorizer.get_feature_names_out())
-    df.to_csv("query_tfidf.csv", encoding='utf-8', index=False)
-    df.to_excel("query_tfidf.xlsx", encoding='utf-8', index=False)
-
-    return query_tfidf, corpus_tfidf
+    return query_tfidf, corpus_tfidf, vectorizer
 
 
 def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
