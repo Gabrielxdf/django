@@ -1,4 +1,4 @@
-import recommendation as r
+import recomendacoes as r
 import os
 
 curriculo_dev_texto = r.process_candidato_tfidf(

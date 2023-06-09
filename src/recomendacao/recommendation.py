@@ -2,6 +2,7 @@ import os
 import time
 
 import PyPDF2
+import fitz
 import nltk
 import numpy as np
 from nltk.corpus import stopwords
@@ -12,7 +13,7 @@ from unidecode import unidecode
 
 
 def process_candidato_tfidf(curriculo):
-    text = get_pdf_text(str(curriculo))
+    text = get_pdf_text_2(str(curriculo))
 
     text = treat_text(text)
     return text
@@ -72,6 +73,19 @@ def get_pdf_text(pdf_path):
 
     return text
 
+def get_pdf_text_2(pdf_path):
+    media_path = os.path.join(os.path.dirname(__file__), '../media')
+    pdf_path = os.path.join(media_path, pdf_path)
+
+    reader = fitz.open(pdf_path)
+    text = []
+
+    for page in reader:
+        text.append(page.get_text())
+
+    text = " ".join(text)
+
+    return text
 
 def treat_text(text):
     nltk.download('rslp')

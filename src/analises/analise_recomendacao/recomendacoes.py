@@ -3,6 +3,7 @@ import time
 import pandas as pd
 import PyPDF2
 import nltk
+import fitz
 import numpy as np
 from nltk.corpus import stopwords
 from sentence_transformers import SentenceTransformer
@@ -10,10 +11,23 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from unidecode import unidecode
 
+def get_pdf_text_2(pdf_path):
+    media_path = os.path.join(os.path.dirname(__file__), '../curriculos')
+    pdf_path = os.path.join(media_path, pdf_path)
+
+    reader = fitz.open(pdf_path)
+    text = []
+
+    for page in reader:
+        text.append(page.get_text())
+
+    text = " ".join(text).replace("\n", "")
+
+    return text
 
 def process_candidato_tfidf(curriculo):
     # o caminho do currículo vai no parâmetro
-    text = get_pdf_text(str(curriculo))
+    text = get_pdf_text_2(str(curriculo))
 
     text = treat_text(text)
     return text
@@ -25,6 +39,29 @@ def process_vaga_tfidf(vaga_text):
     return vaga_text
 
 
+def recommend_vagas_concatenacao(vagas_tfidf, user_tfidf, vagas_bert, user_bert):
+    start = time.time()
+
+    user_text = [str(user_tfidf)]
+    vagas_text = [str(vaga) for vaga in vagas_tfidf]
+    user_embedding = [user_bert]
+    vagas_embedding = [vaga for vaga in vagas_bert]
+
+    # curriculo tfidf, vagas tfidf
+    query_tfidf, corpus_tfidf, vectorizer = apply_tfidf(user_text, vagas_text)
+    cosine_similarities_tfidf = cosine_similarity(query_tfidf, corpus_tfidf)
+    cosine_similarities_bert = cosine_similarity(user_embedding, vagas_embedding)
+    cosine_similarities_concatenado = (np.array(cosine_similarities_tfidf[0]) +
+                                       np.array(cosine_similarities_bert[0])) / 2.0
+
+    indexes = np.argsort(cosine_similarities_concatenado)[::-1]
+    queries = list(np.array(list(vagas_tfidf))[indexes])
+
+    timer = time.time() - start
+
+    return queries, indexes, timer
+
+
 def recommend_vagas_tfidf(vagas, user):
     start = time.time()
 
@@ -34,23 +71,23 @@ def recommend_vagas_tfidf(vagas, user):
     # curriculo tfidf, vagas tfidf
     query_tfidf, corpus_tfidf, vectorizer = apply_tfidf(user_text, vagas_text)
     cosine_similarities = cosine_similarity(query_tfidf, corpus_tfidf)
-
+    
     indexes = np.argsort(cosine_similarities[0])[::-1]
     queries = list(np.array(list(vagas))[indexes])
 
-    print(f'tfidf + cosine = {time.time() - start}')
+    timer = time.time() - start
 
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(corpus_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_vagas/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
 
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(query_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_vagas/query_tfidf.xlsx"), encoding='utf-8', index=False)
+    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
-    return queries
+    return queries, indexes, timer
 
 
 def recommend_candidatos_tfidf(candidatos, vaga):
@@ -77,18 +114,18 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(corpus_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_candidatos/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
 
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(query_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/recomendacao/recomendar_candidatos/query_tfidf.xlsx"), encoding='utf-8', index=False)
+    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
     return queries
 
 
 def get_pdf_text(pdf_path):
-    media_path = os.path.join(os.path.dirname(__file__), '')
+    media_path = os.path.join(os.path.dirname(__file__), '../curriculos')
     pdf_path = os.path.join(media_path, pdf_path)
 
     reader = PyPDF2.PdfReader(pdf_path)
@@ -141,7 +178,7 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
 
 def process_candidato_bert(curriculo):
     model = load_bert_model()
-    text = get_pdf_text(str(curriculo))
+    text = get_pdf_text_2(str(curriculo))
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
 
@@ -167,9 +204,9 @@ def recommend_vagas_bert(vagas, user):
     indexes = np.argsort(cosine_similarities[0])[::-1]
     queries = list(np.array(list(vagas))[indexes])
 
-    print(f'bert + cosine = {time.time() - start}')
+    timer = time.time() - start
 
-    return queries
+    return queries, indexes, timer
 
 
 def recommend_candidatos_bert(candidatos, vaga):
