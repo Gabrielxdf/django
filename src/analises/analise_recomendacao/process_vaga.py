@@ -1,6 +1,6 @@
 from psycopg2.errors import ProgrammingError
 from bd import nova_conexao
-from analise_recomendacao.recomendacoes import process_vaga_tfidf, process_vaga_bert
+from recomendacoes import process_vaga_tfidf, process_vaga_bert
 
 sql_select = "select vag.id, vag.cargo || ' ' || vag.atividades || ' ' || vag.requisitos \
     || ' ' || emp.ramo_atividade || ' ' || emp.descricao from emprega_vaga vag \
