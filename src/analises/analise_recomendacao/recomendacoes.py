@@ -173,8 +173,10 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
         model.save(model_path)
         print(f'Model saved at {model_path}')
     finally:
-        #model._modules["1"].pooling_mode_mean_tokens = False
-        #model._modules["1"].pooling_mode_max_tokens = True
+        model._modules["1"].pooling_mode_mean_tokens = True
+        model._modules["1"].pooling_mode_max_tokens = False
+        model._modules["1"].pooling_mode_cls_token = False
+        model._modules["1"].pooling_mode_mean_sqrt_len_tokens = False
         print(model._modules["1"])
 
         return model
