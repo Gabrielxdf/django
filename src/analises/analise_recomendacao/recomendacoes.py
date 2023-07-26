@@ -6,7 +6,7 @@ import nltk
 import fitz
 import numpy as np
 from nltk.corpus import stopwords
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, models
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from unidecode import unidecode
@@ -172,8 +172,12 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
         model = SentenceTransformer(model_name, device="cpu")
         model.save(model_path)
         print(f'Model saved at {model_path}')
+    finally:
+        #model._modules["1"].pooling_mode_mean_tokens = False
+        #model._modules["1"].pooling_mode_max_tokens = True
+        print(model._modules["1"])
 
-    return model
+        return model
 
 
 def process_candidato_bert(curriculo):
