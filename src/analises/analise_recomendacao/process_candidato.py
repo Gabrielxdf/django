@@ -1,6 +1,7 @@
 from psycopg2.errors import ProgrammingError
 from bd import nova_conexao
 from recomendacoes import process_candidato_tfidf, process_candidato_bert
+import sys
 
 sql_select = "select id, curriculo from emprega_usuario where nivel_usuario = 4"
 sql_update = "update emprega_usuario set curriculo_processado = %s, curriculo_embedding = %s where id = %s"
@@ -15,5 +16,5 @@ with nova_conexao() as conexao:
     else:
         for row in curriculos:
             cursor.execute(sql_update, (process_candidato_tfidf(
-                row[1]), process_candidato_bert(row[1]), row[0]))
+                row[1]), process_candidato_bert(row[1]), sys.argv[1] if sys.argv[1] != None else "", row[0]))
         conexao.commit()

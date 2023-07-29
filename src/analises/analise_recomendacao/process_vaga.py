@@ -1,6 +1,7 @@
 from psycopg2.errors import ProgrammingError
 from bd import nova_conexao
 from recomendacoes import process_vaga_tfidf, process_vaga_bert
+import sys
 
 sql_select = "select vag.id, vag.cargo || ' ' || vag.atividades || ' ' || vag.requisitos \
     || ' ' || emp.ramo_atividade || ' ' || emp.descricao from emprega_vaga vag \
@@ -17,5 +18,5 @@ with nova_conexao() as conexao:
     else:
         for row in vagas:
             cursor.execute(sql_update, (process_vaga_tfidf(
-                row[1]), process_vaga_bert(row[1]), row[0]))
+                row[1]), process_vaga_bert(row[1]), sys.argv[1] if sys.argv[1] != None else "", row[0]))
         conexao.commit()

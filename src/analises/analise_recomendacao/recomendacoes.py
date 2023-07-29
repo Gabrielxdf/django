@@ -161,10 +161,14 @@ def apply_tfidf(query, corpus):
     return query_tfidf, corpus_tfidf, vectorizer
 
 
-def load_bert_model(model_name="neuralmind/bert-large-portuguese-cased"):
+def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
     #paraphrase-multilingual-MiniLM-L12-v2
     #neuralmind/bert-base-portuguese-cased
     #neuralmind/bert-large-portuguese-cased
+    #unicamp-dl/ptt5-base-portuguese-vocab
+    #unicamp-dl/ptt5-large-portuguese-vocab
+    #xlm-roberta-base
+    #xlm-roberta-large
     model_path = os.path.join(os.path.dirname(
         __file__), f'bert_models/{model_name}')
 
@@ -180,12 +184,13 @@ def load_bert_model(model_name="neuralmind/bert-large-portuguese-cased"):
         model._modules["1"].pooling_mode_max_tokens = False
         model._modules["1"].pooling_mode_cls_token = False
         model._modules["1"].pooling_mode_mean_sqrt_len_tokens = False
+        print(model_name)
         print(model._modules["1"])
 
         return model
 
 
-def process_candidato_bert(curriculo):
+def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
     model = load_bert_model()
     text = get_pdf_text_2(str(curriculo))
 
@@ -194,7 +199,7 @@ def process_candidato_bert(curriculo):
     return embedding
 
 
-def process_vaga_bert(text):
+def process_vaga_bert(text, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
     model = load_bert_model()
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
