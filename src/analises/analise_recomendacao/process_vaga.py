@@ -18,5 +18,5 @@ with nova_conexao() as conexao:
     else:
         for row in vagas:
             cursor.execute(sql_update, (process_vaga_tfidf(
-                row[1]), process_vaga_bert(row[1]), sys.argv[1] if sys.argv[1] != None else "", row[0]))
+                row[1]), process_vaga_bert(row[1], sys.argv[1] if sys.argv[1] != None else ""), row[0]))
         conexao.commit()

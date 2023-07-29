@@ -1,0 +1,10 @@
+RESULTADOS PARA PTT5-BASE
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.03973388671875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01177978515625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0233306884765625s
+MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
+MAP da recomendação de vagas usando BERT: 0.5534301138616995
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8648778998778998
+NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
+NDCG da recomendação de vagas usando BERT: 0.800445707493896
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9340781558603444

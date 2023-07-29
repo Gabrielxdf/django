@@ -16,5 +16,5 @@ with nova_conexao() as conexao:
     else:
         for row in curriculos:
             cursor.execute(sql_update, (process_candidato_tfidf(
-                row[1]), process_candidato_bert(row[1]), sys.argv[1] if sys.argv[1] != None else "", row[0]))
+                row[1]), process_candidato_bert(row[1], sys.argv[1] if sys.argv[1] != None else ""), row[0]))
         conexao.commit()

@@ -80,12 +80,12 @@ def recommend_vagas_tfidf(vagas, user):
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(corpus_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+    #df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
 
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(query_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/query_tfidf.xlsx"), encoding='utf-8', index=False)
+    #df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_vagas/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
     return queries, indexes, timer
 
@@ -114,12 +114,12 @@ def recommend_candidatos_tfidf(candidatos, vaga):
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(corpus_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
+    #df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/corpus_tfidf.xlsx"), encoding='utf-8', index=False)
 
     # exportar a matriz tf-idf para xlsx
     df = pd.DataFrame(query_tfidf.toarray(),
                       columns=vectorizer.get_feature_names_out())
-    df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/query_tfidf.xlsx"), encoding='utf-8', index=False)
+    #df.to_excel(os.path.abspath("src/analises/analise_recomendacao/recomendar_candidatos/query_tfidf.xlsx"), encoding='utf-8', index=False)
 
     return queries
 
@@ -191,7 +191,7 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
 
 
 def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
-    model = load_bert_model()
+    model = load_bert_model(model_name)
     text = get_pdf_text_2(str(curriculo))
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
@@ -200,7 +200,7 @@ def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM
 
 
 def process_vaga_bert(text, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
-    model = load_bert_model()
+    model = load_bert_model(model_name)
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
 
