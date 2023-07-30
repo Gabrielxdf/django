@@ -161,7 +161,7 @@ def apply_tfidf(query, corpus):
     return query_tfidf, corpus_tfidf, vectorizer
 
 
-def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
+def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2", pooling_method="mean"):
     #paraphrase-multilingual-MiniLM-L12-v2
     #neuralmind/bert-base-portuguese-cased
     #neuralmind/bert-large-portuguese-cased
@@ -180,18 +180,18 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2"):
         model.save(model_path)
         print(f'Model saved at {model_path}')
     finally:
-        model._modules["1"].pooling_mode_mean_tokens = True
-        model._modules["1"].pooling_mode_max_tokens = False
-        model._modules["1"].pooling_mode_cls_token = False
-        model._modules["1"].pooling_mode_mean_sqrt_len_tokens = False
-        print(model_name)
+        model._modules["1"].pooling_mode_mean_tokens = True if pooling_method == "mean" else False
+        model._modules["1"].pooling_mode_max_tokens = True if pooling_method == "max" else False
+        model._modules["1"].pooling_mode_cls_token = True if pooling_method == "cls" else False
+        model._modules["1"].pooling_mode_mean_sqrt_len_tokens = True if pooling_method == "mean_sqrt" else False
+        print(f'\nMODELO {model_name} COM POOLING {pooling_method}')
         print(model._modules["1"])
 
         return model
 
 
-def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
-    model = load_bert_model(model_name)
+def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM-L12-v2", pooling_method="mean"):
+    model = load_bert_model(model_name, pooling_method)
     text = get_pdf_text_2(str(curriculo))
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
@@ -199,8 +199,8 @@ def process_candidato_bert(curriculo, model_name="paraphrase-multilingual-MiniLM
     return embedding
 
 
-def process_vaga_bert(text, model_name="paraphrase-multilingual-MiniLM-L12-v2"):
-    model = load_bert_model(model_name)
+def process_vaga_bert(text, model_name="paraphrase-multilingual-MiniLM-L12-v2", pooling_method="mean"):
+    model = load_bert_model(model_name, pooling_method)
 
     embedding = model.encode(text, show_progress_bar=False).tolist()
 
