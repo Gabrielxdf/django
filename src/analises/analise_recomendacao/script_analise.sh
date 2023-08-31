@@ -1,4 +1,67 @@
 #!/bin/bash
+#SBERT
+python3 process_vaga.py "paraphrase-multilingual-MiniLM-L12-v2" "mean";
+python3 process_candidato.py "paraphrase-multilingual-MiniLM-L12-v2" "mean";
+echo -e "\n RESULTADOS PARA SBERT - MEAN" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "paraphrase-multilingual-MiniLM-L12-v2" "mean_sqrt";
+python3 process_candidato.py "paraphrase-multilingual-MiniLM-L12-v2" "mean_sqrt";
+echo -e "\n RESULTADOS PARA SBERT - MEAN_SQRT" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "paraphrase-multilingual-MiniLM-L12-v2" "cls";
+python3 process_candidato.py "paraphrase-multilingual-MiniLM-L12-v2" "cls";
+echo -e "\n RESULTADOS PARA SBERT - CLS" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "paraphrase-multilingual-MiniLM-L12-v2" "max";
+python3 process_candidato.py "paraphrase-multilingual-MiniLM-L12-v2" "max";
+echo -e "\n RESULTADOS PARA SBERT - MAX" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+#BERTIMBAU-BASE
+python3 process_vaga.py "neuralmind/bert-base-portuguese-cased" "mean";
+python3 process_candidato.py "neuralmind/bert-base-portuguese-cased" "mean";
+echo -e "\n RESULTADOS PARA BERTIMBAU-BASE - MEAN" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-base-portuguese-cased" "mean_sqrt";
+python3 process_candidato.py "neuralmind/bert-base-portuguese-cased" "mean_sqrt";
+echo -e "\n RESULTADOS PARA BERTIMBAU-BASE - MEAN_SQRT" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-base-portuguese-cased" "cls";
+python3 process_candidato.py "neuralmind/bert-base-portuguese-cased" "cls";
+echo -e "\n RESULTADOS PARA BERTIMBAU-BASE - CLS" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-base-portuguese-cased" "max";
+python3 process_candidato.py "neuralmind/bert-base-portuguese-cased" "max";
+echo -e "\n RESULTADOS PARA BERTIMBAU-BASE - MAX" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+#BERTIMBAU-LARGE
+python3 process_vaga.py "neuralmind/bert-large-portuguese-cased" "mean";
+python3 process_candidato.py "neuralmind/bert-large-portuguese-cased" "mean";
+echo -e "\n RESULTADOS PARA BERTIMBAU-LARGE - MEAN" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-large-portuguese-cased" "mean_sqrt";
+python3 process_candidato.py "neuralmind/bert-large-portuguese-cased" "mean_sqrt";
+echo -e "\n RESULTADOS PARA BERTIMBAU-LARGE - MEAN_SQRT" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-large-portuguese-cased" "cls";
+python3 process_candidato.py "neuralmind/bert-large-portuguese-cased" "cls";
+echo -e "\n RESULTADOS PARA BERTIMBAU-LARGE - CLS" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
+python3 process_vaga.py "neuralmind/bert-large-portuguese-cased" "max";
+python3 process_candidato.py "neuralmind/bert-large-portuguese-cased" "max";
+echo -e "\n RESULTADOS PARA BERTIMBAU-LARGE - MAX" | tee -a resultados.txt
+python3 analise_recomendacao_3.py | tee -a resultados.txt;
+
 #PTT5-BASE
 python3 process_vaga.py "unicamp-dl/ptt5-base-portuguese-vocab" "mean";
 python3 process_candidato.py "unicamp-dl/ptt5-base-portuguese-vocab" "mean";
