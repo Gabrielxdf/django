@@ -1,176 +1,525 @@
 
+ RESULTADOS PARA SBERT - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0179595947265625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006519317626953125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0209808349609375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA SBERT - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018829345703125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006591796875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0214691162109375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA SBERT - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01666259765625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006069183349609375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.019439697265625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA SBERT - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0188751220703125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006755828857421875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0214080810546875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-BASE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0191802978515625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0069732666015625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0220947265625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-BASE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01873779296875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006771087646484375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021484375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-BASE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0184173583984375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0065765380859375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021240234375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-BASE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0181884765625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006603240966796875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0211181640625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0189208984375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0069732666015625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0215606689453125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0190582275390625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006816864013671875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0216522216796875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-LARGE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0186920166015625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0067291259765625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021484375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0186309814453125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.00672149658203125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021392822265625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
  RESULTADOS PARA PTT5-BASE - MEAN
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0258026123046875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0097503662109375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0213470458984375s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.5534301138616995
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8648778998778998
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.800445707493896
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9340781558603444
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018646240234375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006626129150390625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0214080810546875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-BASE - MEAN_SQRT
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.024810791015625s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01041412353515625s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02239990234375s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.5534301138616995
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8648778998778998
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.800445707493896
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9340781558603444
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185089111328125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006500244140625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0210418701171875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-BASE - CLS
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.028167724609375s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0102386474609375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.022552490234375s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.2293359425476401
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7884737554112553
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.5677173369276515
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.883503773422982
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018280029296875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.00655364990234375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021087646484375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-BASE - MAX
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.026885986328125s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01052093505859375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0223846435546875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.4202816031894632
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8581430513930514
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7276601685666735
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9212176570153101
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018310546875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.00666046142578125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0215301513671875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-LARGE - MEAN
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0261688232421875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0148162841796875s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.023895263671875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.5284426053249583
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.876843954248366
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.800741548976745
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9367150905120203
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018463134765625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0064849853515625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0211639404296875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-LARGE - MEAN_SQRT
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0235443115234375s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01328277587890625s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0235748291015625s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.5284426053249583
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.876843954248366
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.800741548976745
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9367150905120203
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0189208984375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0065765380859375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02178955078125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-LARGE - CLS
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.02386474609375s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01351165771484375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0233001708984375s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.21948655778807918
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8305113658742691
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.5838557143297578
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9100140414964846
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018829345703125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.00669097900390625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02154541015625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA PTT5-LARGE - MAX
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.027984619140625s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01401519775390625s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.024810791015625s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.36865509319375545
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8575874958374958
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7227988511133916
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9231083481721727
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0187225341796875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.00673675537109375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021575927734375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA XML-R BASE - MEAN
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.025115966796875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0099639892578125s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0211944580078125s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.49901189379951283
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.860981240981241
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7485916635084997
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9215619146959414
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0193939208984375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006893157958984375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.022308349609375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA XML-R BASE - MEAN_SQRT
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0255889892578125s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01087188720703125s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.024627685546875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.49901189379951283
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.860981240981241
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7485916635084997
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9215619146959414
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0189056396484375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0067291259765625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0215606689453125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
 
  RESULTADOS PARA XML-R BASE - CLS
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0248260498046875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.00998687744140625s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021942138671875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.5004112387243059
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.860981240981241
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7925508971844154
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9233359300326385
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018707275390625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006702423095703125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.021514892578125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA SBERT - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0182952880859375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006534576416015625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0211639404296875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.682735419383282
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7448173607281529
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.8143839580916136
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8458882787758069
+
+ RESULTADOS PARA SBERT - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01898193359375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006755828857421875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0219268798828125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.682735419383282
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7448173607281529
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.8143839580916136
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8458882787758069
+
+ RESULTADOS PARA SBERT - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185394287109375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006610870361328125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0215911865234375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.591729439808242
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7297883214513744
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7672201826796956
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8413381805397652
+
+ RESULTADOS PARA SBERT - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185546875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.006954193115234375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0212860107421875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.3611185356723286
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7083234472785856
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.6957892690775993
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8355901380599109
+
+ RESULTADOS PARA BERTIMBAU-BASE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01812744140625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01175689697265625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0238494873046875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.5981551003234297
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7069458270415422
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7991364883040035
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8385078994458671
+
+ RESULTADOS PARA BERTIMBAU-BASE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01898193359375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01200103759765625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0244598388671875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.5981551003234297
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7069458270415422
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7991364883040035
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8385078994458671
+
+ RESULTADOS PARA BERTIMBAU-BASE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185546875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0120086669921875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0242919921875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.7182469751874332
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7361109054703441
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.847824966361848
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8475155289210988
+
+ RESULTADOS PARA BERTIMBAU-BASE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185546875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01207733154296875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02423095703125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.43406816746472254
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7079962731372323
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7389220098976125
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8344231278257309
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018524169921875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0156402587890625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0259857177734375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.6483766519086614
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7167995273813262
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.8165178735667415
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8402270086311338
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0188446044921875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01560211181640625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0259857177734375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.6483766519086614
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7167995273813262
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.8165178735667415
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8402270086311338
+
+ RESULTADOS PARA BERTIMBAU-LARGE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0183258056640625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0157470703125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.025787353515625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.3449597076903184
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7182317296652772
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.6533074621803229
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8376434729013369
+
+ RESULTADOS PARA BERTIMBAU-LARGE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0189208984375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0160980224609375s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.026580810546875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.4641909274091109
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7082774178043102
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7529477480182081
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8344070454097292
+
+ RESULTADOS PARA PTT5-BASE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.019287109375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0126190185546875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0251617431640625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.4766873692074587
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7055271976297492
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7678910254892924
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8389798810114021
+
+ RESULTADOS PARA PTT5-BASE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0189056396484375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.012451171875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0247802734375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.4766873692074587
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7055271976297492
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7678910254892924
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8389798810114021
+
+ RESULTADOS PARA PTT5-BASE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0196533203125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0128936767578125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0265655517578125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.244344088506718
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.6883858781062357
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5725482073532542
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8274223317901049
+
+ RESULTADOS PARA PTT5-BASE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0188751220703125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01239776611328125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0239105224609375s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.3826298593565439
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7073288127522824
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7229001310771022
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8341687546267479
+
+ RESULTADOS PARA PTT5-LARGE - MEAN
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.018585205078125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01568603515625s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0255889892578125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.45363113718298
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7099763793837444
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7453181099649586
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8417537081976656
+
+ RESULTADOS PARA PTT5-LARGE - MEAN_SQRT
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01898193359375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0161590576171875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.026611328125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.45363113718298
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7099763793837444
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7453181099649586
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8417537081976656
+
+ RESULTADOS PARA PTT5-LARGE - CLS
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0190277099609375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0157012939453125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02618408203125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.24504302299092368
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.6862339756902329
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5585230702226432
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8204769808089276
+
+ RESULTADOS PARA PTT5-LARGE - MAX
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01904296875s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01593017578125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0264129638671875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.35947614450088466
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7072813613000801
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.7015255494232717
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8345433605234546
+
+ RESULTADOS PARA XML-R BASE - MEAN
+
+ RESULTADOS PARA XML-R BASE - MEAN_SQRT
+
+ RESULTADOS PARA XML-R BASE - CLS
 
  RESULTADOS PARA XML-R BASE - MAX
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0265655517578125s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.00991058349609375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.022369384765625s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.36069552933156646
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.858480352980353
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7102269414162701
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9220054678905312
 
  RESULTADOS PARA XML-R LARGE - MEAN
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.025909423828125s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0155029296875s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02685546875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.6366051826842535
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.860981240981241
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.8403128407460663
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9215703873263321
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0200042724609375s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.017120361328125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0279541015625s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.2310615524505779
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7059947733701988
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5440170526927451
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8334212665753644
 
  RESULTADOS PARA XML-R LARGE - MEAN_SQRT
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0258026123046875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01375579833984375s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.023834228515625s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.6366051826842535
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.860981240981241
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.8403128407460663
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9215703873263321
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.01910400390625s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.0161590576171875s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0266876220703125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.2310615524505779
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7059947733701988
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5440167506858169
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8334212665753644
 
  RESULTADOS PARA XML-R LARGE - CLS
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.026947021484375s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.0127716064453125s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0232391357421875s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.2901083876249849
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8603292887667887
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.6544167005860764
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9211547878225858
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0182647705078125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.015655517578125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.0255889892578125s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.22412993077741933
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.7069333382930056
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5462234366433972
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8334872840980649
 
  RESULTADOS PARA XML-R LARGE - MAX
-As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0263671875s
-As similaridades com o BERT foram calculadas com o tempo médio de: 0.01287841796875s
-As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.022552490234375s
-MAP da recomendação de vagas usando TF-IDF: 0.860981240981241
-MAP da recomendação de vagas usando BERT: 0.4117207452836965
-MAP da recomendação de vagas usando CONCATENAÇÃO: 0.8608613053613052
-NDCG da recomendação de vagas usando TF-IDF: 0.923359135360959
-NDCG da recomendação de vagas usando BERT: 0.7445997131386967
-NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.9219497704844573
+As similaridades com o TF-IDF foram calculadas com o tempo médio de: 0.0185089111328125s
+As similaridades com o BERT foram calculadas com o tempo médio de: 0.01544952392578125s
+As similaridades com a CONCATENAÇÃO foram calculadas com o tempo médio de: 0.02557373046875s
+MAP da recomendação de vagas usando TF-IDF: 0.707039222033356
+MAP da recomendação de vagas usando BERT: 0.25201304246805956
+MAP da recomendação de vagas usando CONCATENAÇÃO: 0.6824938391734661
+NDCG da recomendação de vagas usando TF-IDF: 0.8335296346355187
+NDCG da recomendação de vagas usando BERT: 0.5889967585420381
+NDCG da recomendação de vagas usando CONCATENAÇÃO: 0.8248795653821636
