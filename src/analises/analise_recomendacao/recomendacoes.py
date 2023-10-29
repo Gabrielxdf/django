@@ -184,6 +184,7 @@ def load_bert_model(model_name="paraphrase-multilingual-MiniLM-L12-v2", pooling_
         model._modules["1"].pooling_mode_max_tokens = True if pooling_method == "max" else False
         model._modules["1"].pooling_mode_cls_token = True if pooling_method == "cls" else False
         model._modules["1"].pooling_mode_mean_sqrt_len_tokens = True if pooling_method == "mean_sqrt" else False
+        #model._modules["0"].max_seq_length = 512
         print(f'\nMODELO {model_name} COM POOLING {pooling_method}')
         print(model._modules["1"])
 
